@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #0a0a0f, #111122, #1a0033);
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  position: sticky;
+  top: 0;
+  background: rgba(20, 20, 35, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #9d4edd;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00f5d4;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10%;
+  text-align: center;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #9d4edd, #00f5d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-img img {
+  width: 300px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.btn {
+  background: linear-gradient(90deg, #9d4edd, #00f5d4);
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00f5d4;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Features */
+.features {
+  text-align: center;
+  padding: 4rem 10%;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  transition: 0.4s;
+}
+
+.feature-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-10px);
+}
+
+/* Pricing */
+.pricing {
+  text-align: center;
+  padding: 4rem 10%;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.plan {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  transition: 0.3s;
+}
+
+.plan.highlight {
+  border: 2px solid #00f5d4;
+  transform: scale(1.05);
+}
+
+.plan:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.plan h3 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00f5d4;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(10, 10, 25, 0.8);
+  margin-top: 4rem;
+}
